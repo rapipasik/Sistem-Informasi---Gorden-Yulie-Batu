@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('testimonials', function (Blueprint $table) {
             $table->id();
+            $table->string('name'); // Nama pelanggan yang memberikan ulasan
+            $table->string('role_or_city')->nullable(); // Jabatan atau asal kota (Contoh: "Ibu Rumah Tangga, Malang")
+            $table->text('review'); // Isi review / testimoni gorden
+            $table->integer('rating')->default(5); // Rating bintang (1 sampai 5)
+            $table->string('avatar')->nullable(); // Foto profil pelanggan (opsional)
             $table->timestamps();
         });
     }
