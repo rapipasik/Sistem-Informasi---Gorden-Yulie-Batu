@@ -1,0 +1,12 @@
+/* Atur font utama untuk seluruh website */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Efek hover untuk link di Footer */
+.hover-white {
+    transition: color 0.3s ease;
+}
+.hover-white:hover {
+    color: #ffffff !important;
+}
